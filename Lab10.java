@@ -16,6 +16,12 @@ public class Lab10 {
         while (true) {
             System.out.println("Pick a shape: square, rectangle, circle (or 'q' to quit)");
             String input = scan.nextLine();
+            scan.close();
+
+            if (!input.equals("square") && !input.equals("rectangle") && !input.equals("circle")) {
+                System.out.println("Invalid input. Please enter 'square', 'rectangle', 'circle', or 'q' to quit.");
+                continue;
+            }
             if (input.equals("q")) {
                 return;
             }
