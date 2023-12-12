@@ -158,7 +158,7 @@ public class Lab10 {
                         damage += 5;
                     }
                     if (attackRoll == 20 || (check && attackRoll == 20 + 5)) {
-                        damage *= 2;
+                        damage *= 4;
                         System.out.print("Critical hit! ");
                     }
                     System.out.print("You dealt " + damage + " damage");
