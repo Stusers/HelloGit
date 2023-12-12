@@ -95,6 +95,7 @@ public class Lab10 {
             for (int j = 2; j * j <= i; j++) {
                 if (i % j == 0) {
                     check = false;
+
                     break;
                 }
             }
